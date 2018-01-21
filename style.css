@@ -1,5 +1,5 @@
 body {
-	background-color: #999999;
+	background-color: #bababa;
 }
 
 * {
@@ -18,9 +18,9 @@ a {
 
 
 #nav {
-	
+	background-color: #cc0000;
 	text-align: center; 
-	width: 980px;
+	width: 100%;
 	margin: auto;
 	padding: 2px;
 	
@@ -31,14 +31,18 @@ a {
 }
 #nav li {
 	display: inline;
+	color: White;
 
 }
 #nav li a {
 	padding: 20px;
+	color: White;
 }
 #nav li a:hover {
 	background-color: #d8d8d8;
-	border-bottom: 5px solid red;
+	/*border-bottom: 5px solid red;*/
+	box-shadow: 0px 1px 8px #828080
+	color: #cc0000;
 }
 #nav li a:active {
 	background-color: red;
@@ -58,13 +62,35 @@ a {
 	color: Blue;
 	text-align: center;
 	font-weight: bold;
-	border: 3px solid #727272;
-	border-radius: 20px;
-	box-shadow: 5px 1px 8px #828080, -5px 1px 8px #828080
+
+	border-radius: 5px;
+	/*box-shadow: 5px 1px 8px #828080, -5px 1px 8px #828080*/
 }
 
 #links {
 	float:right;
+}
+
+.homeInfo {
+	
+}
+
+.homeInfo ul {
+	list-style-type: none;
+}
+.homeInfo li {
+	display: inline;
+}
+.homeInfo li button{
+	font-weight: bold;
+	background-color: #cc0000;
+	color: White;
+	    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /* SlideShow */
@@ -135,7 +161,7 @@ a {
 }
 
 #footer {
-	text-align: right;
+	text-align: center;
 	width: 100%;
-	padding: 5px;
+	padding-top: 15px;
 }
