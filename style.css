@@ -1,6 +1,9 @@
 body {
-	background-color: #bababa;
+	background-color: #ffe6e6;
+	margin: 0;
 }
+
+* {box-sizing:border-box}
 
 * {
 	font-family: "Century Gothic", Times New Roman, Georgia, Serif;
@@ -16,50 +19,71 @@ a {
 	text-decoration: none;
 }
 
-
 #nav {
 	background-color: #cc0000;
-	text-align: center; 
+	/*text-align: center;*/ 
+	overflow: hidden;
 	width: 100%;
-	margin: auto;
-	padding: 2px;
-	
-}
-#nav ul {
-	list-style-type: none;
-	
-}
-#nav li {
-	display: inline;
-	color: White;
+	display: block;
+	/*margin: auto;*/
 
+	
 }
-#nav li a {
-	padding: 20px;
+
+#nav .search-container {
+	float: right;
+}
+#nav input[type=text] {
+	float: none;
+	border: none;
+	font-size: 14px;
+	padding: 10px;
+	margin-top: 2px;
+  	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+}
+#nav .search-container button {
+	float: right;
+  	background: #ddd;
+  	font-size: 14px;
+  	padding: 10px;
+  	margin-top: 2px;
+  	margin-left: 0px;
+	margin-right: 4px;
+	margin-bottom: 2px;
+  	border: none;
+  	cursor: pointer;
+}
+
+
+
+#nav  a {
+	float: left;
+	padding:10px;
 	color: White;
 }
-#nav li a:hover {
+#nav  a:hover {
 	background-color: #d8d8d8;
 	/*border-bottom: 5px solid red;*/
-	box-shadow: 0px 1px 8px #828080
+	box-shadow: 0px 1px 8px #828080;
 	color: #cc0000;
 }
-#nav li a:active {
+#nav  a:active {
 	background-color: red;
-	border-bottom: 5px solid red;
+	/*border-bottom: 5px solid red;*/
 }
 
 
 
 #content {
-	background-color: White;
-	width: 980px;
+	/*background-color: White;*/
+	width: 50%;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: auto;
-	padding: 10px;
-	color: Blue;
+	/*padding: 10px;*/
 	text-align: center;
 	font-weight: bold;
 
@@ -67,101 +91,61 @@ a {
 	/*box-shadow: 5px 1px 8px #828080, -5px 1px 8px #828080*/
 }
 
+.homeBanner {
+
+}
+
+.homeBanner img {
+	width: 100%;
+	max-height: auto;
+	border-radius: 15px;
+}
+
 #links {
 	float:right;
 }
 
-.homeInfo {
-	
-}
-
-.homeInfo ul {
-	list-style-type: none;
-}
-.homeInfo li {
-	display: inline;
-}
-.homeInfo li button{
+#content button{
 	font-weight: bold;
-	background-color: #cc0000;
-	color: White;
-	    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+	color: Black;
+	border-style: solid 5px;
+	border-color: #cc0000;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 10px;
 }
 
-/* SlideShow */
-* {box-sizing:border-box}
-.slideshow-container {
-	max-width: 800px;
-	position: relative;
-	margin: auto;
-}
-.mySlide {
-	display: none;
-}
-.prev .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-  	color: white;
-  	font-weight: bold;
-  	font-size: 18px;
-  	transition: 0.6s ease;
-  	border-radius: 0 3px 3px 0;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+/* Create three equal columns that floats next to each other */
+.column {
+background-color: White;
+    float: left;
+    width: 28.66%;
+    padding: 10px;
+    margin: 2%;
+    height: 200px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
 }
 
 #footer {
-	text-align: center;
+	background-color: #cc0000;
 	width: 100%;
-	padding-top: 15px;
+	padding: 15px;
+	color: White;
+	
+	bottom: 0;
 }
