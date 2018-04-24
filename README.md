@@ -1,5 +1,5 @@
 # SchoolWebsite
-An improvement to current primary school website.
+An alternate UI for the school website, its unresponsive at the moment as i am only working on showcasing the UI layout.
 
 Original: http://www.smithystreet.org.uk/ 
 
